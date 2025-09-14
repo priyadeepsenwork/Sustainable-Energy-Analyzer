@@ -1,0 +1,46 @@
+# Configuration for data aquisition
+
+# 1. Defining time range for analysis
+data_range:
+  start_year: 2000
+  end-year: 2024
+
+# 2. Define countries with their ISO Country Code
+countries:
+  -"USA"
+  -"IND"
+  -"JPN"
+  -"CHN"
+  -"DEU"
+  -"BRA"
+  -"AUS"
+  -"CAN"
+  -"GBR"
+  -"RUS"
+  -"ARG"
+  -"UKR"
+
+# 3. World Bank indicators with user-friendly names
+
+world_bank_indicators:
+  'NY.GDP.PCAP.KD': 'gdp_per_capita'
+  'SP.POP.TOTL': 'population'
+  'EG.ELC.ACCS.ZS': 'access_to_electricity_pct'
+
+# 4. URLs for dataset:
+
+data_urls:
+  owid_energy: "https://raw.githubusercontent.com/owid/energy-data/master/owid-energy-data.csv"
+
+# 5. File Paths
+paths:
+  raw_data_dir: "../data/raw/"
+  log_file: "../logs/data_collection.log"
+
+# 6. Network settings
+network:
+  timeout_seconds: 60
+  retry_attempts: 3
+  retry_backoff_factor: 0.5
+
+

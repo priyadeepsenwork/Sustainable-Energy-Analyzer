@@ -1,0 +1,10 @@
+pandas
+wbdata
+requests
+PyYAML
+python-dotenv
+numpy
+matplotlib
+seaborn
+scipy
+notebook
